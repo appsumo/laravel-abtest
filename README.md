@@ -1,3 +1,5 @@
+Ported from https://github.com/ben182/laravel-ab and https://github.com/apurbajnu/abtest
+
 This package helps you to find out which content works on your site and which doesn't.
 
 It allows you to create experiments and goals. The visitor will receive randomly the next experiment and you can customize your site to that experiment. The view and the goal conversion will be tracked and you can view the results in a report.
