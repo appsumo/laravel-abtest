@@ -1,5 +1,5 @@
 {
-    "name": "appsumo/abtest",
+    "name": "appsumo/laravel-abtest",
     "description": "Laravel 8 AB testing package",
     "type": "library",
     "license": "MIT",
