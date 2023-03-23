@@ -16,8 +16,9 @@ class CreateGoalsTable extends Migration
         Schema::create('ab_goals', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->integer('hit');
-            $table->integer('experiment_id');
+            $table->integer('hit')->default(0);
+            $table->integer('experiment_id')->unsigned();
+            $table->foreign('experiment_id')->references('id')->on('ab_experiments');
             $table->timestamps();
         });
     }
