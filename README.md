@@ -9,7 +9,7 @@ It allows you to create experiments and goals. The visitor will receive randomly
 After installation publish the config file:
 
 ```bash
-php artisan vendor:publish --provider="AppSumo\abtest\AbtestServiceProvider"
+php artisan vendor:publish --provider="AppSumo\Abtest\AbtestServiceProvider"
 ```
 
 You can define your experiments and goals in there.
