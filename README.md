@@ -28,17 +28,11 @@ Two new migrations should be added.
 
 ```html
 @if (Abtest::isExperiment('logo-big'))
-
-<div class="logo-big"></div>
-
+    <div class="logo-big"></div>
 @elseif (Abtest::isExperiment('logo-grayscale'))
-
-<div class="logo-greyscale"></div>
-
+    <div class="logo-greyscale"></div>
 @elseif (Abtest::isExperiment('brand-name'))
-
-<h1>Brand name</h1>
-
+    <h1>Brand name</h1>
 @endif
 ```
 
@@ -48,17 +42,11 @@ Alternatively you can use a custom blade if statement:
 
 ```html
 @ab('logo-big')
-
-<div class="logo-big"></div>
-
+    <div class="logo-big"></div>
 @elseab('logo-grayscale')
-
-<div class="logo-greyscale"></div>
-
+    <div class="logo-greyscale"></div>
 @elseab('brand-name')
-
-<h1>Brand name</h1>
-
+    <h1>Brand name</h1>
 @endab
 ```
 
